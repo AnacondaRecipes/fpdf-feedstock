@@ -12,15 +12,16 @@ source:
 
 build:
   number: 0
-  noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . --no-build-isolation --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python >=3
+    - python
+    - setuptools
+    - wheel
   run:
-    - python >=3
+    - python
 
 test:
   imports:
@@ -35,7 +36,12 @@ about:
   summary: Simple PDF generation for Python
   license: LGPLv3
   license_file: LICENSE
-
+  description: |
+    PyFPDF is a library for PDF document generation under Python, ported from PHP.
+    Compared with other PDF libraries, PyFPDF is simple, small and versatile, with advanced capabilities, 
+    and is easy to learn, extend and maintain.
+  dev_url: https://github.com/reingart/pyfpdf
+  doc_url: https://github.com/reingart/pyfpdf
 extra:
   recipe-maintainers:
     - conda-forge/rpaframework-core
