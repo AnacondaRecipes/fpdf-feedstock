@@ -36,7 +36,7 @@ about:
   summary: Simple PDF generation for Python
   license: LGPL-3.0-or-later
   license_file: LICENSE
-  license_family: GPL3
+  license_family: LGPL
   description: |
     PyFPDF is a library for PDF document generation under Python, ported from PHP.
     Compared with other PDF libraries, PyFPDF is simple, small and versatile, with advanced capabilities, 
