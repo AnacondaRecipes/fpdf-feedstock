@@ -42,7 +42,7 @@ about:
     Compared with other PDF libraries, PyFPDF is simple, small and versatile, with advanced capabilities, 
     and is easy to learn, extend and maintain.
   dev_url: https://github.com/reingart/pyfpdf
-  doc_url: https://github.com/reingart/pyfpdf
+  doc_url: https://pyfpdf.readthedocs.io
 extra:
   recipe-maintainers:
     - conda-forge/rpaframework-core
